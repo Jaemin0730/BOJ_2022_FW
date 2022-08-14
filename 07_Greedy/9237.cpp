@@ -8,14 +8,22 @@ using namespace std;
 typedef long long ll;
 typedef pair<int,int> pii;
 
+vector<int> v;
+
 int main(void)
 {
     u;
     int n;
-    int a[100000];
     cin >> n;
     for (int i = 0; i < n; i++) {
-        cin >> a[i];
+        int m;
+        cin >> m;
+        v.pb(m);
     }
-    sort(a, a + n);
+    sort(v.begin(), v.end(), greater<int>());
+    for (int i = 0; i < n; i++) {
+        v[i] = v[i] + i + 2;
+    }
+    sort(v.begin(), v.end(), greater<int>());
+    cout << v[0];
 }
