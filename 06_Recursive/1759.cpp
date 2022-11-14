@@ -11,7 +11,7 @@ typedef pair<int,int> pii;
 int L, C;
 string s = "";
 bool tf[16] = {};
-//https://gusdnr69.tistory.com/203
+
 void Search (int cnt, int x) {  // cnt: 개수, x: 현재 인덱스
     if (cnt == L) {
         int J = 0, M = 0; // J:자음, M:모음
