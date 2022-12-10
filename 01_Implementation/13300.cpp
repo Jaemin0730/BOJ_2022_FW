@@ -13,9 +13,7 @@ typedef pair<int,int> pii;
 int main(void)
 {
     u
-    int a[2][7]={0};
-	
-	int N, K, r=0;
+    int a[2][7] = {}, N, K, r=0;
 	cin >> N >> K;
 	
 	for(int i=0; i<N; i++){
